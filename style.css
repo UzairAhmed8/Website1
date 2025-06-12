@@ -1,0 +1,93 @@
+@font-face {
+    font-family: H1;
+    src: url(fonts/Ephesis-Regular.ttf);
+}
+@font-face {
+    font-family: Techno;
+    src: url(fonts/Audiowide-Regular.ttf);
+}
+
+body{
+    background-color: #373737;
+    color: white;
+}
+
+.headerheader{
+    background-image: url(mgs/Black\ and\ Orange\ Modern\ Food\ Vlogger\ YouTube\ Banner.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+#heading-1:hover{
+    background-color: black;
+    color: rgb(247, 222, 112);
+    text-shadow: 1px 2px 5px white;
+    border: 1px solid white;
+    box-shadow: 1px 2px 5px black;
+    transition: all 0.3s ease-in-out;
+}
+
+#heading-1{
+    cursor: progress;
+    font-family: H1;
+    color: #000; 
+    text-align: center;
+    border: 1px solid purple;
+    background-color: rgb(247, 222, 112);
+    text-shadow: 1px 2px 5px #9b5cf2;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px white;
+}
+
+.sub-heading{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #171717;
+    border: 1px solid white;
+}
+
+#heading-2{
+    font-family: Techno;
+    font-size: 17px;
+    padding: 10px;
+    color:  white;
+    text-shadow: 1px 1px 10px  rgb(255, 0, 43);
+}
+
+#heading-2:hover{
+    color: #ff002b;
+    text-shadow: 1px 1px 10px white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.heading-3{
+    font-size: 55px;
+    text-align: center;
+    color: #ff002b;
+    text-shadow: 1px 2px 5px crimson;
+    font-family: H1;
+}
+
+.container-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.food{
+    border: 1px solid red;
+    height: 150px;
+    width: 150px;
+}
+
+.cards-r1{
+    border: 1px solid gray;
+    padding-bottom: 25px;
+}
