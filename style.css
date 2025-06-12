@@ -89,5 +89,48 @@ body{
 
 .cards-r1{
     border: 1px solid gray;
-    padding-bottom: 25px;
+    padding-bottom: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 5px;
+    border-radius: 7px;
+}
+
+.cards-r1:hover{
+    background-color: gray;
+    transition: all ease-in-out 0.5s;
+}
+    
+.card-h{
+    text-align: center;
+    color: #ff002b;
+    font-family: Techno;
+    text-shadow: 1px 2px 5px white;
+}
+
+.card-p{
+    font-size: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-btn{
+    font-size: 10px;
+    font-family: Techno;
+    background-color: #ff002b;
+}
+
+.card-btn:hover{
+    color: #ff002b;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.heading-4{
+    text-align: center;
+    color: #9b5cf2;
+}
+
+.paragraph-1{
+    text-align: center;
+    font-size: 10px;
 }
