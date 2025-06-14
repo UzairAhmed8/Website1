@@ -12,6 +12,55 @@ body{
     color: white;
 }
 
+.carousel {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: 700px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .prev {
+    left: 15px;
+  }
+  
+  .next {
+    right: 15px;
+  }
 .headerheader{
     background-image: url(mgs/Black\ and\ Orange\ Modern\ Food\ Vlogger\ YouTube\ Banner.png);
     background-size: cover;
@@ -133,4 +182,129 @@ body{
 .paragraph-1{
     text-align: center;
     font-size: 10px;
+}
+
+.footer-1{
+    background-color: #171717;
+    border: 1px solid #ff002b;
+    border-top: 1px solid #9b5cf2;
+    border-left: 1px solid #9b5cf2;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px whitesmoke;
+    padding: 10px;
+}
+
+.footer-heads{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.f-heads{
+    font-size: 12px;
+    font-family: Techno;
+    color: #ffba61; 
+    text-shadow: #ff002b 1px 1px 10px;
+}
+
+.footer-p{
+    font-size: 7px;
+}
+
+.make-footer-m{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btns{
+    border: 1px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+.btns:hover{
+    color: #ff002b;
+    transition: all 0.3s ease-in-out;
+    text-decoration: line-through;
+}
+
+.link{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: #ff002b;
+    border-radius: 5px;
+    padding: 3px;
+}
+.link:hover{
+    color: #ff002b;
+    background-color: white;
+    border: 1px solid #ff002b;
+    transition: all 0.3s ease-in-out;
+}
+
+.con{
+    font-family: Techno;
+    color: cyan;
+    font-size: 10px;
+    text-shadow: 1px 1px 10px white;
+}
+
+#yt{
+    font-size: 12px;
+    border-radius: 50%;
+}
+#yt:hover{
+    color: red;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+}
+#ig{
+    font-size: 12px;
+    border-radius: 50%;
+
+}
+#ig:hover{
+    color: purple;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+}
+#wh{
+    font-size: 12px;
+    border-radius: 50%;
+}
+#wh:hover{
+    color: green;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+}
+#mg{
+    font-size: 12px;
+    border-radius: 50%;
+}
+#mg:hover{
+    color: #0051ff;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+}
+#fb{
+    font-size: 12px;
+    border-radius: 50%;
+}
+#fb:hover{
+    color: #0051ff;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
 }

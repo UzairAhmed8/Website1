@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Sellisto'</title>
 </head>
 <body>
@@ -24,6 +25,20 @@
     <div>
         <h1 class="heading-3">Sellisto'</h1>
     </div>
+
+<!-- Carousel Section -->
+<div class="carousel">
+    <div class="carousel-track" id="carousel-track">
+      <img src="food/burger.jpg" alt="Burger">
+      <img src="food/Pasta whte.jpg" alt="Pasta">
+      <img src="food/shawarma.jpg" alt="Shawarma">
+      <img src="food/checen stcs.jpg" alt="Chicken Sticks">
+    </div>
+    <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+    <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+  </div>
+
+<!-- ---------------------   -->
 
     <div class="container-1">
 
@@ -50,7 +65,7 @@
 
         <div class="cards-r1">
             <img src="food/checen stcs.jpg" alt="Error" title="chicken drum sticks" class="food"> 
-            <h4 class="card-h">chicken drum sticks</h4>
+            <h4 class="card-h">chicken drum <br> sticks</h4>
             <p class="card-p">Best chicken  in the whole town. <br> Specially fresh baked chicken for you.</p>
             <button class="card-btn">599Rs.</button>
         </div>
@@ -78,6 +93,75 @@
 
         <h3 class="heading-4">🚚 Fast & Reliable Delivery</h3>
         <p class="paragraph-1">Your food arrives hot and fresh, <br> just the way you like it. Our delivery team is quick, <br> courteous, and always on time—because we know you don’t want <br> to wait when you’re hungry.</p>
+
+        <br>
+        <h3 class="heading-4">🌟Perks and Rewards that we offer</h3>
+        <p class="paragraph-1">Unlock a world of exclusive perks with our premium membership! <br> Enjoy early access to new products, members-only discounts, priority customer support, <br> and special rewards with every purchase. Our premium users also get access to surprise <br> gifts, limited-time offers, and VIP deals you won’t find anywhere <br>else. Join today and elevate your experience — because with premium, <br> every order comes with something extra just for you!</p>
     </div>
+
+    <div>
+        <footer class="footer-1">
+            <div class="footer-heads">
+                <h2 class="f-heads">About us</h2>
+                <h2 class="f-heads">Contact-us</h2>
+                <h2 class="f-heads">Help</h2>
+                <h2 class="f-heads">Social</h2>
+            </div>
+            <div class="make-footer-m">
+                <div class="footer-abt">
+                    <p class="footer-p">We deliver through the Pakistan.</p>
+                    <p class="footer-p">we have personal cattle farms <br> for the meat and dairy items.</p>
+                    <p class="footer-p">Main branch available in Karachi.</p>
+                    <p class="footer-p">Riders are also treated well.</p>
+                    <p class="footer-p">Drive through also available.</p>
+                </div>
+                <div class="footer-cont">
+                    <p class="footer-p">Email:<br>ua5000076@gmail.com</p>
+                    <p class="footer-p">Ph#: <br> 03332821498</p>
+                    <p class="footer-p">Instagram: <br> <br><a href="https://www.instagram.com/burako_8/" class="link">Follow</a></p>
+                    <p class="con">Contributer</p>
+                    <a href="https://www.instagram.com/sunshine_.scarlet._/" class="link">Follow</a>
+                </div>
+                <div class="footer-help">
+                    <a href="#" class="btns">Blog</a>
+                    <a href="#" class="btns">Help Center</a>
+                    <a href="#" class="btns">Our Team</a>
+                </div>
+                <div class="footer-social">
+                    <i class="fa-brands fa-youtube" id="yt"></i>
+                    <i class="fa-brands fa-instagram" id="ig"></i>
+                    <i class="fa-brands fa-whatsapp" id="wh"></i>
+                    <i class="fa-brands fa-facebook-messenger" id="mg"></i>
+                    <i class="fa-brands fa-facebook" id="fb"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- Java -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.getElementById('carousel-track');
+      const slides = track.querySelectorAll('img');
+      const nextBtn = document.getElementById('nextBtn');
+      const prevBtn = document.getElementById('prevBtn');
+  
+      let currentIndex = 0;
+      const totalSlides = slides.length;
+  
+      function updateSlide(index) {
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+  
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlide(currentIndex);
+      });
+  
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlide(currentIndex);
+      });
+    });
+  </script>
 </body>
 </html>
