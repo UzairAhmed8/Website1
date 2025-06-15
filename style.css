@@ -308,3 +308,64 @@ body{
     background-color: white;
     border-radius: 50%;
 }
+
+.subcon-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-promo{
+    height: 30%;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.para-promo{
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    font-family: Techno;
+    color: #ff002b;
+    text-shadow: 1px 1px 5px black;
+}
+
+.btn-promo{
+    font-size: 14px;
+    border-radius: 10px;
+    color: white;
+    background-color: #0051ff;
+    box-shadow: 1px 1px 4px black;
+    border: 1px solid transparent;
+    font-family: H1;
+    font-weight: bolder;
+}
+.btn-promo:hover{
+    background-color: #ff002b;
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container-3{
+    background-color: #171717;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ff002b;
+    border-top:1px solid #9b5cf2;
+    border-left:1px solid #9b5cf2;
+}
+
+.container-2{
+    background-color: #171717;
+    border-radius: 10px;
+    border: 1px solid #ff002b;
+    border-top:1px solid #9b5cf2;
+    border-left:1px solid #9b5cf2;
+}
+
+.banner-promo-2{
+    margin: auto;
+    height: 20%;
+    width:20%;
+    border-radius: 15px;
+}
